@@ -1,0 +1,170 @@
+/* Styles for the popup filter */
+.popup-container {
+    display: none; /* Hide the popup by default */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;  /* Adjusted width */
+    height: 80%; /* Adjusted height */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popup__header-close {
+    cursor: pointer;
+}
+
+.popup__content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filter-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    margin-top: 10px;
+}
+
+.filter-form input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjusted to fit inside the container */
+}
+
+.checkboxes-dropdown {
+    position: relative;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    max-height: 150px; /* Adjusted height */
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkboxes-dropdown label {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    flex-basis: calc(50% - 10px); /* Two items per row */
+}
+
+.checkboxes-dropdown label:hover {
+    background-color: #f1f1f1;
+}
+
+.checkboxes-dropdown input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination .page-numbers span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.filter-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #280559;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Active pagination button style */
+.page-numbers span.active {
+    font-weight: bold;
+    color: #280559;
+}
+
+.checkboxes-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkboxes-dropdown div {
+    flex-basis: calc(50% - 10px); /* Two items per row */
+    margin-bottom: 10px;
+}
+
+/* Styles for tags */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.tag .remove-tag {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}

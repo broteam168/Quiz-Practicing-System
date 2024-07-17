@@ -1,0 +1,42 @@
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.fsmonitor=true
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=sonnhhe186585@fpt.edu.vn
+user.name=khang
+user.email==
+user.email==
+user.email=sonnhhe186586@fpt.edu.vn
+safe.directory=C:/Users/markx-dell
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://gitlab.com/tuanvm2-SWP391/summer2024-swp391.se1823-g4.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.sonnhhe186586.remote=origin
+branch.sonnhhe186586.merge=refs/heads/sonnhhe186586
+branch.thunthe186573.remote=origin
+branch.thunthe186573.merge=refs/heads/sonnhhe186586
+branch.hoangbdhe186410.remote=origin
+branch.hoangbdhe186410.merge=refs/heads/sonnhhe186586
+gui.wmstate=normal
+gui.geometry=1109x563+342+318 312 255
+branch.longnthe186590.remote=origin
+branch.longnthe186590.merge=refs/heads/longnthe186590
+branch.trungdqhe186690.remote=origin
+branch.trungdqhe186690.merge=refs/heads/trungdqhe186690
+user.name==

@@ -1,0 +1,78 @@
+
+
+.filter-sort-area{
+    align-items: start;
+}
+.filter-sort-area select{
+    width: 200px;
+}
+
+.exam-name {
+    font-family: sans-serif;
+    max-width: 95%;
+}
+
+.questions{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.percentage{
+    font-family: sans-serif
+}
+
+.status{
+    font-family: sans-serif;
+}
+
+th{
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    border-bottom: 3px;
+    border-top: 3px;
+}
+
+.practice-title {
+    border: none;
+}
+
+tr {
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+tr:hover{
+    background-color: #eee;
+}
+
+.action-column {
+    display: flex;
+    justify-content: center;
+}
+
+.percentage-square {
+    width: 153px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentage-square p {
+    font-weight: 700;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.error-message{
+    color: red;
+    font-style: italic;
+    text-align: center;
+}

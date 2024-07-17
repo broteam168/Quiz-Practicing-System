@@ -1,0 +1,405 @@
+body
+{
+    background: white;
+    font-family: 'Inter', sans-serif;
+}
+.course-details
+{
+    margin-top: -10px;
+    position: relative;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+/* Style for when the side bar is opened */
+.course-details.sidebar-open {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.course-details-header
+{
+    padding-top: 40px;
+    display: flex;
+}
+
+.course-details-title
+{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.course-details-title h1
+{
+    /*margin-top: 30px;*/
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.course-details-button
+{
+    width: 154px;
+    height: 45px;
+    color: #FF6636;
+    font-size: 16px;
+    font-weight: bold;
+    background: #FFEEE8;
+    border: #FFEEE8;
+}
+
+.course-details-button:hover
+{
+    background: #FFE3D9;
+    cursor: pointer;
+}
+
+.course-details-button-back
+{
+    width: 112px;
+    height: 45px;
+    color: #FF6636;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #FF6636;
+    margin-left: 52%;
+}
+
+.course-details-button-back:hover
+{
+    color: #FFB39B;
+    border: 2px solid #FFB39B;
+    cursor: pointer;
+}
+
+.course-details-tab
+{
+    display: flex;
+    border-bottom: 3px solid #FF6636;
+    margin-left: 10px;
+}
+
+.course-details-tab button
+{
+    background: #D9D9D9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    border-radius: 35px 35px 0 0;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+.course-details-tab button:hover
+{
+    background: #ccc;
+}
+
+.course-details-tab button.tabactive
+{
+    background: #FF6636;
+    color: white;
+}
+
+.course-details-tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.course-details-tab-content.tabactive {
+    display: block;
+}
+
+.course-details-tab-content label
+{
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 18px;
+}
+
+.form-part-1
+{
+    display: flex;
+    margin-bottom: -20px;
+}
+
+.form-part-1-left
+{
+    width: 60%;
+    margin-right: 20px;
+}
+
+
+.form-part-1-right
+{
+    width: 40%;
+    position: relative;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    wresize: vertical;
+    height: 100px;
+}
+/*
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}*/
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 19px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #fff;
+    transition: .4s;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    border-radius: 16px;
+    left: 1.2px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #999999;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #5fdd54;
+    border: 1px solid transparent;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.featured-part
+{
+    margin-right: 21px;
+}
+
+.sub-part
+{
+    display: flex;
+    width: 100%;
+}
+
+.sub-part select, input
+{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 547px;
+    box-sizing: border-box;
+}
+.expert
+{
+    cursor: not-allowed;
+}
+
+.course-details-thumbnail
+{
+    margin-top: 5px;
+}
+
+.course-details-thumbnail img
+{
+    height: auto;
+    width: 400px;
+}
+
+.course-details-thumbnail-label
+{
+    position: absolute;
+    padding-left: 120px;
+    padding-right: 119px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background: #CBD2DC;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.submit-part
+{
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: 0px;
+}
+
+.expert-member
+{
+    background: #F1F1F1;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.expert-member p
+{
+    font-size: 25px;
+}
+
+.unassign
+{
+    position: absolute;
+    top: 30px;
+    left: 35%;
+}
+
+.add-expert-button
+{
+    width: 150px;
+    height: 45px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #FF6636;
+    border: 2px solid #FF6636;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.add-expert-button:hover
+{
+    background: #FE815A;
+}
+
+.unassign-popup
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.unassign-popup-content
+{
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 350px;
+    /*max-width: 1000px;*/
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 23px;
+}
+
+.unassign-popup h1
+{
+    width: 100;
+    margin-bottom: 10px;
+}
+
+.unassign-confirm
+{
+    width: 100%;
+    display: flex;
+}
+
+.unassign-confirm button
+{
+    margin-right: 20px;
+}
+
+.unExpert
+{
+    display: none;
+}
+
+.addExpert
+{
+    margin-bottom: 10px;
+}
+
+#message-course
+{
+    margin-bottom: 10px;
+}
+
+.submit-butt
+{
+    color: black;
+    background: grey;
+    cursor: not-allowed;
+    width: 154px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    border: #FFEEE8;
+}
+
+.submit-butt.active
+{
+    color: #FF6636;
+    background: #FFEEE8;
+    cursor: pointer;
+}
+
+.submit-butt.active:hover
+{
+    background: #FFE3D9;
+}
+
+#des-label
+{
+    margin-bottom: 50px;
+}
+
+#save-popup
+{
+    display: none;
+}

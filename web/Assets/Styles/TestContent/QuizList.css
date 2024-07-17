@@ -1,0 +1,468 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8E9EB;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold; /* Make header word bold and black */
+}
+
+.header p {
+    font-size: 16px;
+    color: #9898A3;
+}
+
+.tab-container {
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-container .main__navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.main__navigation-item {
+    position: relative;
+    color: #92929D;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.main__navigation-item.active {
+    color: #280559;
+}
+
+.menu-select {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    height: 4px;
+    background: #280559;
+}
+
+.main__navigation-item.active .menu-select {
+    display: block;
+}
+
+.main-content {
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.search-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-label h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.new-quiz-btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: #FF5F00;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #E8E9EB;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.search-bar .search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search-bar .search input {
+    padding: 15px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-bar .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar .clear-btn,
+.search-bar .search-btn,
+.search-bar .filters-btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: #FF5F00;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quiz-table {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 20px;
+    text-align: left;
+}
+
+table th {
+    background-color: #F8F9FB;
+    color: #333; /* Make header word bold and black */
+    font-weight: bold;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #F8F9FB;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+.sort-icons {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    color: #92929D;
+    margin-left: 5px;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination .info {
+    color: #92929D;
+    padding-right: 850px;
+}
+
+.pagination .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination select {
+    padding: 10px 20px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #FFF;
+    color: #280559;
+    cursor: pointer;
+}
+
+.pagination button {
+    padding: 10px;
+    border: none;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #280559;
+}
+
+.pagination button:disabled {
+    color: #CCC;
+    cursor: not-allowed;
+}
+
+.pagination button svg {
+    fill: #280559;
+}
+
+.category {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #F8F9FB;
+    color: #280559;
+    display: inline-block;
+    border: 1px solid #280559; /* Add border to match the mockup */
+}
+
+/* Modal Styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__header-title {
+    font-size: 24px;
+}
+
+.popup__header-close {
+    cursor: pointer;
+}
+
+.popup__content {
+    margin-top: 20px;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-form label {
+    margin-top: 10px;
+}
+
+.filter-form input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination .page-numbers span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.clear-btn {
+    padding: 10px 20px;
+    background-color: #FF5F00;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #FF5F00;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filters-btn {
+    padding: 10px 20px;
+    background-color: #FF5F00;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Link styles for the "..." */
+.quiz-table a {
+    color: #000; /* Make "..." link black */
+    text-decoration: none;
+}
+
+.quiz-table a:hover {
+    text-decoration: underline;
+}
+/* Delete Confirmation Modal Styles */
+.delete-popup-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-popup {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-popup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.delete-popup__header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.delete-popup__header-close {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.delete-popup__content {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.delete-popup__actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete-popup__actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF5F00;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-popup__actions .cancel-btn {
+    background-color: #ccc;
+    color: #333;
+}
